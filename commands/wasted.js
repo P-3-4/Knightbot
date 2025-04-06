@@ -27,7 +27,7 @@ async function wastedCommand(sock, chatId, message) {
         try {
             profilePic = await sock.profilePictureUrl(userToWaste, 'image');
         } catch {
-            profilePic = 'https://imgur.com/84Avyu9'; // Default image if no profile pic
+            profilePic = 'https://i.imgur.com/84Avyu9.jpeg'; // Default image if no profile pic
         }
 
         // Get the wasted effect image
