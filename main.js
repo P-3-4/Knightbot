@@ -74,7 +74,7 @@ const { autoStatusCommand, handleStatusUpdate } = require('./commands/autostatus
 // Global settings
 global.packname = settings.packname;
 global.author = settings.author;
-global.channelLink = "https://whatsapp.com/channel/0029Va90zAnIHphOuO8Msp3A";
+global.channelLink = "";
 global.ytch = "Mr Unique Hacker";
 
 // Add this near the top of main.js with other global configurations
@@ -84,7 +84,7 @@ const channelInfo = {
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
             newsletterJid: '120363161513685998@newsletter',
-            newsletterName: 'KnightBot MD',
+            newsletterName: 'KnightBot',
             serverMessageId: -1
         }
     }
@@ -130,7 +130,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
         }
 
         // Basic message response in private chat
-        if (!isGroup && (userMessage === 'hi' || userMessage === 'hello' || userMessage === 'bot' || userMessage === 'hlo' || userMessage === 'hey' || userMessage === 'bro')) {
+        if (!isGroup && (userMessage === 'pea' || userMessage === 'P34' )) {
             await sock.sendMessage(chatId, {
                 text: 'Hi, How can I help you?\nYou can use .menu for more info and commands.',
                 ...channelInfo
