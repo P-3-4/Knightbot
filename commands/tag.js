@@ -79,7 +79,7 @@ async function tagCommand(sock, chatId, senderId, messageText, replyMessage) {
         }
     } else {
         await sock.sendMessage(chatId, {
-            text: messageText || "Tagged message",
+            text: messageText || "You Were Tagged 😎",
             mentions: mentionedJidList
         });
     }
